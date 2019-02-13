@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  web:
+    container_name: heavywater
+    stdin_open: true
+    tty: true
+    build: .
+    image: heavywater:latest
+    volumes:
+      - ./:/app
+      - ./heavywater_configs/heavywater.conf:/etc/supervisor/conf.d/heavywater.conf
+      - ./heavywater_configs/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+    command: '/usr/bin/supervisord'
+    ports:
+      - "8000:8000"
+    restart: always
