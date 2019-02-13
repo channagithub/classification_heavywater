@@ -1,0 +1,16 @@
+*.py[cod]
+
+# Virtualenvs
+env/
+
+# cache
+__pycache__
+
+# supervisor logs and pid
+*.log
+*.pid
+
+# pickle files
+*.pkl
+
+.DS_Store
