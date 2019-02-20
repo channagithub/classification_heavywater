@@ -14,4 +14,6 @@ run deploy.sh, like
 ./deploy.sh
 
 # Use sample api  
-127.0.0.1:8000/isAlive  
+curl http://0.0.0.0:8000/isAlive
+
+curl "http://0.0.0.0:8000/get_prediction" -H 'Content-Type: application/json' -d '{"sentences":["love it"]}'
