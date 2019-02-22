@@ -10,7 +10,5 @@ __pycache__
 *.log
 *.pid
 
-# pickle files
-*.pkl
 
 .DS_Store
