@@ -10,11 +10,11 @@ app = Flask(__name__)
 
 global tfidf, model, id_to_class
 
-tfidf = load('tfidf.pkl') 
+tfidf = load('pkl_files/tfidf.pkl') 
 print("[DEBUG] loading tfidf done!", flush=True)
-model = load('model.pkl') 
+model = load('pkl_files/model.pkl') 
 print("[DEBUG] loading model done!", flush=True)
-id_to_class = load('id_to_class.pkl') 
+id_to_class = load('pkl_files/id_to_class.pkl') 
 print("[DEBUG] loading id_to_class done!", flush=True)
 
 @app.route('/isAlive', methods=['GET'])
