@@ -2,7 +2,7 @@ import pandas as pd
 from joblib import dump
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-df = pd.read_csv("./data/shuffled-full-set-hashed.csv",
+df = pd.read_csv("/usr/intermediate/shuffled-full-set-hashed.csv",
             names = ['class', 'doc'])
 df.dropna(inplace = True)
 print("Read data done")
@@ -16,4 +16,4 @@ tfidf.fit(df.doc)
 
 print("TFIDF step done")
 
-dump(tfidf, 'pkl_files/tfidf.pkl')
+dump(tfidf, '/usr/intermediate/tfidf.pkl')
