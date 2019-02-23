@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 global tfidf, model, id_to_class
 
-tfidf = load('pkl_files/tfidf.pkl') 
+tfidf = load('/usr/intermediate/tfidf.pkl') 
 print("[DEBUG] loading tfidf done!", flush=True)
 model = load('pkl_files/model.pkl') 
 print("[DEBUG] loading model done!", flush=True)
